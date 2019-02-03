@@ -1,0 +1,28 @@
+.vbx-profile {
+    margin-right: 15px;
+}
+
+.vbx-profile .z-image {
+	border: 1px solid #CCC;
+	padding: 4px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.15);
+}
+
+.vbx-profile .z-label {
+	font-size: 10px;
+}
+
+.user-data .z-vlayout-inner:not(:last-of-type) {
+	padding-bottom: 0px !important;
+	background-color: #EDF3F4;
+}
+
+.user-data .z-vlayout-inner:last-of-type {
+    padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+.user-data .z-combobox-input {
+	cursor: pointer;
+	background-color: white;
+}

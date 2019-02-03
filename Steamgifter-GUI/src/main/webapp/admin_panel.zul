@@ -1,0 +1,77 @@
+<vlayout class="tabpanel-container" hflex="true" vflex="true" apply="com.helloingob.gifter.AdminPanelController">
+    <hlayout hflex="true">
+        <label value="Admin Panel" class="breadcrumb-title" />
+    </hlayout>
+    <tabbox hflex="true" vflex="true">
+        <tabs>
+            <tab label="User" />
+            <tab id="tabCachedGames" label="Cached Games" />
+            <tab id="tabErrorLog" label="Error Log" />
+            <tab label="Info Log" />
+			<tab label="Catalina Log" />
+        </tabs>
+        <tabpanels>
+            <tabpanel>
+                <vlayout hflex="true" vflex="true">
+                    <listbox id="lbxUsers" hflex="true" vflex="true" emptyMessage="no elements" checkmark="true">
+                        <listhead>
+                            <listheader width="25px" sort="auto" align="center" />
+                            <listheader label="Picture" width="70px" sort="auto" align="center" />
+                            <listheader label="Name" width="125px" sort="auto" align="center" />
+                            <listheader label="Algorithm" width="125px" sort="auto" align="center" />
+                            <listheader label="Created" sort="auto" align="center" />
+                            <listheader label="Last Synced" sort="auto" align="center" />
+                            <listheader label="Last Login" sort="auto" align="center" />
+                            <listheader label="Admin" width="125px" sort="auto" align="center" />
+                            <listheader label="Active" width="125px" sort="auto" align="center" />
+                        </listhead>
+                    </listbox>
+                    <hbox hflex="true" pack="end">
+                        <button id="btnAddUser" iconSclass="z-icon-plus" />
+                        <button id="btnEditUser" iconSclass="z-icon-pencil" />
+                        <button id="btnDeleteUser" iconSclass="z-icon-trash-o" />
+                    </hbox>
+                </vlayout>
+            </tabpanel>
+            <tabpanel>
+                <vlayout hflex="true" vflex="true">
+                    <grid id="grdCachedGames" hflex="true" vflex="true" emptyMessage="no elements">
+                        <columns>
+                            <column label="Store Link" sort="auto" />
+                            <column label="Is DLC" sort="auto" align="center" />
+                            <column label="Date" sort="auto" align="center" />
+                        </columns>
+                        <rows />
+                    </grid>
+                </vlayout>
+            </tabpanel>
+       		<tabpanel>
+                <vlayout hflex="true" vflex="true">
+                    <grid id="grdErrorLog" hflex="true" vflex="true" emptyMessage="no elements">
+                        <columns>
+                            <column label="Message" sort="auto" />
+                            <column label="Date" width="125px" sort="auto" align="center" />
+                            <column label="User" width="125px" sort="auto" align="center" />
+                            <column label="Value" width="125px" sort="auto" align="center" />
+                        </columns>
+                        <rows />
+                    </grid>
+                </vlayout>
+            </tabpanel>            
+            <tabpanel>
+                <vlayout hflex="true" vflex="true">
+                    <grid id="grdServerLog" hflex="true" vflex="true" emptyMessage="no elements">
+                        <rows />
+                    </grid>
+                </vlayout>
+            </tabpanel>
+            <tabpanel>
+                <vlayout hflex="true" vflex="true">
+                    <grid id="grdTomcatLog" hflex="true" vflex="true" emptyMessage="no elements">
+                        <rows />
+                    </grid>
+                </vlayout>
+            </tabpanel>			     
+        </tabpanels>
+    </tabbox>
+</vlayout>

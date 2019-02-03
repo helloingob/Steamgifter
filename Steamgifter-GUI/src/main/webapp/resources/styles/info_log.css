@@ -1,0 +1,39 @@
+.image-gallery {
+	position: relative;
+	display: inline-block;
+}
+
+.image-gallery-container {
+	white-space: normal;
+	overflow-y: auto;
+}
+
+.image-gallery img {
+	margin: 10px;
+	cursor: pointer;
+	border: 2px solid grey;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.image-gallery img:hover {
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+}
+
+.image-gallery>.bordered {
+	position: absolute;
+	right: 20px;
+	bottom: 15px;
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.paging-label {
+	font-size: 17px;
+}

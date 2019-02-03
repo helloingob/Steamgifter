@@ -1,0 +1,16 @@
+<vlayout class="tabpanel-container" hflex="true" vflex="true" apply="com.helloingob.gifter.GiveawayReminderController">
+    <hlayout hflex="true">
+        <label value="Giveaways Without Receive Status" class="breadcrumb-title" />
+    </hlayout>
+    <grid id="grdGiveaways" hflex="true" vflex="true" emptyMessage="no elements">
+        <columns>
+            <column label="Picture" width="150px" sort="auto" align="center" />
+            <column label="Time" width="120px" sort="auto" align="center" />
+            <column label="Winner" width="125px" sort="auto" align="center" />
+            <column label="Title" sort="auto" align="center" />
+            <column label="Steamgifts" width="100px" sort="auto" align="center" />
+            <column label="Steam" width="100px" sort="auto" align="center" />
+        </columns>
+        <rows />
+    </grid>
+</vlayout>

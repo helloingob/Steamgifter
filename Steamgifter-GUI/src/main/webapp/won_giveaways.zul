@@ -1,0 +1,15 @@
+<vlayout class="tabpanel-container" hflex="true" vflex="true" apply="com.helloingob.gifter.WonGiveawaysController">
+    <label hflex="true" value="Won Giveaways" class="breadcrumb-title" />
+    <bandbox id="bbxSearchBar" hflex="true" />
+    <grid id="grdWinnerLog" hflex="true" vflex="true" emptyMessage="no elements">
+        <columns>
+            <column label="Picture" width="150px" sort="auto" align="center" />
+            <column id="clmDate" label="Date" width="120px" sort="auto" align="center" />
+            <column label="Winner" width="125px" sort="auto" align="center" />
+            <column label="Title" sort="auto" align="center" />
+            <column id="clmValue" label="Value" width="80px" sort="auto" align="center" />
+            <column id="clmWinChance" label="Winchance" width="100px" sort="auto" align="center" />
+        </columns>
+        <rows />
+    </grid>
+</vlayout>

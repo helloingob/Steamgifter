@@ -1,0 +1,15 @@
+<zk>
+    <window title="Giveaway Detail" border="normal" height="300px" width="250px" apply="com.helloingob.gifter.GiveawayDetailController" position="center, center" mode="modal" closable="true">
+        <vbox hflex="true" align="center">
+            <label id="lblTitle" />
+            <div id="imgContainer" />
+            <grid>
+                <columns visible="false">
+                    <column width="100px" />
+                    <column />
+                </columns>
+                <rows id="rows" />
+            </grid>
+        </vbox>
+    </window>
+</zk>

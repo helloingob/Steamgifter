@@ -1,0 +1,73 @@
+@import url("info_log.css");
+
+@import url("user_panel.css");
+
+.z-tabpanel {
+	overflow-y: auto;
+}
+
+.steam-icon {
+	color: white;
+	text-decoration: none;
+}
+
+.tabpanel-container {
+	padding: 5px 15px 10px;
+}
+
+html {
+	font-family: 'Open Sans';
+	background-color: #5687A8;
+}
+
+.north-header {
+	background-color: #5687A8
+}
+
+.header-title {
+	color: white;
+	font-family: 'Open Sans';
+	margin-left: 10px;
+	font-size: 35px;
+	text-decoration: none;
+}
+
+.breadcrumb-title {
+	font-size: 25px;
+}
+
+.page-backlayer {
+	background-color: #E4E6E9;
+}
+
+.last-giveaway-box {
+	background-color: #dff0d8;
+	border: 2px solid #d6e9c6;
+	padding: 10px 20px 10px 20px;
+}
+
+.widget-box {
+    background-color: #d9edf7;
+	border: 2px solid #bce8f1;
+	color: #31708f;
+	padding: 10px 20px 10px 20px;
+	display: inline-block;
+	margin-right: 15px;
+	margin-top: 10px;
+}
+
+.main-content {
+	background-color: white;
+	border-left: 1px solid #CCCED1;
+	border-right: 1px solid #CCCED1;
+}
+
+.won-giveaway-image {
+	width: 145px;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+
+.z-menuitem-content > i {
+	color: #4D4D4D;
+}

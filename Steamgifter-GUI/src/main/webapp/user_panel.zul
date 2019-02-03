@@ -1,0 +1,93 @@
+<vlayout class="tabpanel-container" hflex="true" vflex="true" apply="com.helloingob.gifter.UserPanelController">
+    <hlayout hflex="true">
+        <label value="User Panel" class="breadcrumb-title" />
+    </hlayout>
+    <hlayout hflex="true">
+        <vbox align="end" pack="start" class="vbx-profile">
+            <div id="imageContainer" />
+<!--             <image id="imgUser" width="175px" height="175px" /> -->
+            <label id="lblLastSynced" value="Last synced: never" />
+        </vbox>
+        <vlayout hflex="true" class="user-data">
+            <hbox hflex="true" align="center">
+                <hbox pack="end" width="150px">
+                    <label value="Login Name: " />
+                </hbox>
+                <textbox id="tbxLoginName" hflex="true" />
+            </hbox>
+            <hbox hflex="true" align="center">
+                <hbox pack="end" width="150px">
+                    <label value="Profile Name: " />
+                </hbox>
+                <textbox id="tbxProfileName" hflex="true" disabled="true" />
+            </hbox>
+            <hbox hflex="true" align="center">
+                <hbox pack="end" width="150px">
+                    <label value="Password: " />
+                </hbox>
+                <textbox id="tbxPassword" hflex="true" type="password" />
+            </hbox>
+            <hbox hflex="true" align="center">
+                <hbox pack="end" width="150px">
+                    <label value="Notification Email: " />
+                </hbox>
+                <textbox id="tbxEmail" hflex="true" />
+            </hbox>
+            <hbox hflex="true" align="center">
+                <hbox pack="end" width="150px">
+                    <label value="PHPSessionID: " />
+                </hbox>
+                <textbox id="tbxSessionId" hflex="true" />
+            </hbox>
+            <hbox hflex="true" align="center">
+                <hbox pack="end" width="150px">
+                    <label value="Skip Wishlist: " />
+                </hbox>
+                <combobox id="cbxSkipWishlist" hflex="true" readonly="true" />
+            </hbox>
+            <hbox hflex="true" align="center">
+                <hbox pack="end" width="150px">
+                    <label value="Skip Packages: " />
+                </hbox>
+                <combobox id="cbxSkipSub" hflex="true" readonly="true" />
+            </hbox>
+            <hbox hflex="true" align="center">
+                <hbox pack="end" width="150px">
+                    <label value="Algorithm: " />
+                </hbox>
+                <combobox id="cbxAlgorithm" hflex="true" readonly="true" />
+            </hbox>
+            <hbox pack="end" hflex="true">
+                <button id="btnUpdate" label="Update" />
+            </hbox>
+        </vlayout>
+    </hlayout>
+    <tabbox vflex="true" hflex="true">
+        <tabs width="150px">
+            <tab label="Won Giveaways" />
+            <tab label="Level Development" />
+            <tab label="Won Giveaways For Level" />
+        </tabs>
+        <tabpanels hflex="true">
+            <tabpanel hflex="true">
+                <grid id="grdWonGiveaways" hflex="true" vflex="true" emptyMessage="no elements">
+                    <columns>
+                        <column label="Picture" width="150px" sort="auto" align="center" />
+                        <column id="clmDate" label="Date" width="120px" sort="auto" align="center" />
+                        <column label="Title" sort="auto" align="center" />
+                        <column id="clmLevel" label="Level" width="75px" sort="auto" align="center" />
+                        <column id="clmValue" label="Value" width="80px" sort="auto" align="center" />
+                        <column id="clmWinChance" label="Winchance" width="100px" sort="auto" align="center" />
+                    </columns>
+                    <rows />
+                </grid>
+            </tabpanel>
+            <tabpanel hflex="true">
+                <box id="boxStatistics" hflex="true" vflex="true" align="center"/>
+            </tabpanel>
+            <tabpanel hflex="true">
+                <box id="boxLevelGroupedGiveaways" hflex="true" vflex="true" align="center"/>
+            </tabpanel>
+        </tabpanels>
+    </tabbox>
+</vlayout>

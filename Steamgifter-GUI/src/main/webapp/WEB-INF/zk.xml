@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk>
+    <library-property>
+        <name>org.zkoss.zul.progressbox.position</name>
+        <value>center,bottom</value>
+    </library-property>
+    <library-property>
+        <name>org.zkoss.theme.preferred</name>
+        <value>atlantic</value>
+    </library-property>
+</zk>

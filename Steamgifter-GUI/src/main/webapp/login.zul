@@ -1,0 +1,19 @@
+<zk>
+    <window title="Login" border="normal" height="175px" width="300px" apply="com.helloingob.gifter.LoginController" position="center, center" mode="modal">
+        <vlayout>
+            <hbox hflex="true">
+                <label value="Name:" hflex="1" />
+                <textbox id="tbxName" hflex="2" />
+            </hbox>
+            <hbox hflex="true">
+                <label value="Password:" hflex="1" />
+                <textbox id="tbxPw" type="password" hflex="2" />
+            </hbox>
+            <hbox hflex="true">
+                <hbox hflex="true" pack="end">
+                    <button id="btnLogin" label="login" />
+                </hbox>
+            </hbox>
+        </vlayout>
+    </window>
+</zk>

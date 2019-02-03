@@ -1,0 +1,75 @@
+<zk>
+    <window id="wndUserEditForm" border="normal" width="600px" height="450px" mode="modal" position="center,center" apply="com.helloingob.gifter.UserFormController">
+        <vlayout hflex="true" class="user-data">
+            <hbox hflex="true" align="center">
+                <hbox pack="end" width="150px">
+                    <label value="Login Name: " />
+                </hbox>
+                <textbox id="tbxLoginName" hflex="true" />
+            </hbox>
+            <hbox hflex="true" align="center">
+                <hbox pack="end" width="150px">
+                    <label value="Profile Name: " />
+                </hbox>
+                <textbox id="tbxProfileName" hflex="true" disabled="true" />
+            </hbox>
+            <hbox hflex="true" align="center">
+                <hbox pack="end" width="150px">
+                    <label value="Password: " />
+                </hbox>
+                <textbox id="tbxPassword" hflex="true" type="password" />
+            </hbox>
+            <hbox hflex="true" align="center">
+                <hbox pack="end" width="150px">
+                    <label value="Notification Email: " />
+                </hbox>
+                <textbox id="tbxEmail" hflex="true" />
+            </hbox>
+            <hbox hflex="true" align="center">
+                <hbox pack="end" width="150px">
+                    <label value="PHPSessionID: " />
+                </hbox>
+                <textbox id="tbxSessionId" hflex="true" />
+            </hbox>
+            <hbox hflex="true" align="center">
+                <hbox pack="end" width="150px">
+                    <label value="Algorithm: " />
+                </hbox>
+                <combobox id="cbxAlgorithm" hflex="true" readonly="true" />
+            </hbox>
+            <hbox hflex="true" align="center">
+                <hbox pack="end" width="150px">
+                    <label value="Skip DLC: " />
+                </hbox>
+                <combobox id="cbxSkipDLC" hflex="true" readonly="true" />
+            </hbox>
+            <hbox hflex="true" align="center">
+                <hbox pack="end" width="150px">
+                    <label value="Skip Packages: " />
+                </hbox>
+                <combobox id="cbxSkipSub" hflex="true" readonly="true" />
+            </hbox>
+            <hbox hflex="true" align="center">
+                <hbox pack="end" width="150px">
+                    <label value="Skip Wishlist: " />
+                </hbox>
+                <combobox id="cbxSkipWishlist" hflex="true" readonly="true" />
+            </hbox>
+            <hbox hflex="true" align="center">
+                <hbox pack="end" width="150px">
+                    <label value="Active: " />
+                </hbox>
+                <combobox id="cbxIsActive" hflex="true" readonly="true" />
+            </hbox>
+            <hbox hflex="true" align="center">
+                <hbox pack="end" width="150px">
+                    <label value="Admin: " />
+                </hbox>
+                <combobox id="cbxIsAdmin" hflex="true" readonly="true" />
+            </hbox>
+            <hbox pack="end" hflex="true">
+                <button id="btnOk" label="Ok" />
+            </hbox>
+        </vlayout>
+    </window>
+</zk>

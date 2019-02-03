@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="console-log" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{dd.MM.yyyy HH:mm:ss.SSS} %level %msg%n" />
+        </Console>
+        <File name="error-file-log" fileName="/var/log/steamgifter-central-error.log" append="true">
+            <PatternLayout pattern="%d{dd.MM.yyyy HH:mm:ss.SSS} %level %msg%n" />
+        </File>
+        <File name="info-file-log" fileName="/var/log/steamgifter-central-info.log" append="true">
+            <ThresholdFilter level="error" onMatch="deny" onMismatch="neutral" />
+            <PatternLayout pattern="%d{dd.MM.yyyy HH:mm:ss.SSS} %level %msg%n" />
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root level="debug">
+            <AppenderRef ref="console-log" />
+        </Root>
+        <Logger name="file-output" additivity="true" level="all">
+            <AppenderRef ref="info-file-log" level="info" />
+            <AppenderRef ref="error-file-log" level="error" />
+        </Logger>
+    </Loggers>
+</Configuration>

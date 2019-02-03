@@ -1,0 +1,65 @@
+<?page title="Steamgifter Client - Index"?>
+<?link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"?>
+<?link rel="stylesheet" href="/resources/styles/style.css"?>
+<?link rel="shortcut icon" href="/resources/favicon.ico" type="image/x-icon"?>
+<zk>
+    <borderlayout apply="com.helloingob.gifter.IndexController">
+        <north hflex="true" height="48px" border="none" class="north-header">
+            <box vflex="true" hflex="true" align="center">
+                <hlayout width="1100px">
+                    <a href="/" iconSclass="z-icon-steam fa-3x" class="steam-icon" />
+                    <a href="/" class="header-title">Steamgifter</a>
+                    <box width="840px" vflex="true" align="end" pack="center">
+                        <button iconSclass="z-icon-reorder fa-2x" popup="mnpMenu, after_start" />
+                    </box>
+                </hlayout>
+            </box>
+        </north>
+        <center>
+            <box vflex="true" hflex="true" align="center" class="page-backlayer">
+                <box id="boxContent" width="1100px" vflex="true" class="main-content">
+                    <tabbox vflex="true" hflex="true">
+                        <tabs width="150px">
+                            <tab id="tabDashboard" label="Dashboard" />
+                            <tab id="tabWonGiveaways" label="Won Giveaways" />
+                            <tab label="Giveaway Reminder" />
+                            <tab label="Info Log" />
+                            <tab id="tabUserPanel" label="User Panel" visible="false" />
+                            <tab id="tabAdminPanel" label="Admin Panel" visible="false" />
+                        </tabs>
+                        <tabpanels hflex="true">
+                            <tabpanel hflex="true" >
+                                <vlayout id="vlDashBaordContent" class="tabpanel-container" hflex="true">
+                                    <label hflex="true" value="Dashboard" class="breadcrumb-title" />
+                                    <hlayout id="hlLastGiveaway" hflex="true" class="last-giveaway-box">
+                                        <a iconSclass="z-icon-trophy" style="color: #3c763d; text-decoration: none; cursor: default;" />
+                                        <label id="lblLastWonGame" />
+                                        <box id="boxUserImage" align="end" hflex="true" />
+                                    </hlayout>
+                                </vlayout>
+                            </tabpanel>
+                            <tabpanel>
+                                <include src="won_giveaways.zul" />
+                            </tabpanel>
+                            <tabpanel>
+                                <include src="giveaway_reminder.zul" />
+                            </tabpanel>
+                            <tabpanel>
+                                <include src="info_log.zul" />
+                            </tabpanel>
+                            <tabpanel>
+                                <include src="user_panel.zul" />
+                            </tabpanel>
+                            <tabpanel>
+                                <include src="admin_panel.zul" />
+                            </tabpanel>
+                        </tabpanels>
+                    </tabbox>
+                </box>
+            </box>
+        </center>
+        <south>
+            <menupopup id="mnpMenu" />
+        </south>
+    </borderlayout>
+</zk>

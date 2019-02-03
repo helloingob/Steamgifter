@@ -1,0 +1,36 @@
+<vlayout class="tabpanel-container" hflex="true" vflex="true" apply="com.helloingob.gifter.InfoLogController">
+    <hlayout hflex="true">
+        <label id="lblBreadcrumbTitle" value="Info Log" class="breadcrumb-title" style="cursor:pointer;"/>
+        <hbox id="userBreadcrumb" hflex="true" vflex="true" align="center" visible="false">
+            <a iconSclass="z-icon-angle-double-right" style="color: lightgrey; text-decoration: none; cursor: default;" height="1px" />
+            <div id="bcImageContainer" />
+            <label id="lblEntries" />
+        </hbox>
+        <hbox id="hbxInfoLogNavi" pack="end" align="center" visible="false">
+            <button id="btnLeft" iconSclass="z-icon-chevron-left" disabled="true" />
+            <label id="lblPaging" value="--/--" class="paging-label" />
+            <button id="btnRight" iconSclass="z-icon-chevron-right" disabled="true" />
+        </hbox>
+    </hlayout>
+    <vlayout hflex="true" vflex="true">
+        <hlayout id="hlInfoLogUsers" hflex="true" vflex="true" class="image-gallery-container"></hlayout>
+        <grid id="grdInfoLog" height="500px" hflex="true" emptyMessage="no elements" visible="false">
+            <columns>
+                <column label="Picture" width="175px" sort="auto" align="center" />
+                <column label="Date" width="125px" sort="auto" align="center" />
+                <column label="Title" sort="auto" align="center" />
+                <column id="clmPoints" label="Points" width="125px" sort="auto" align="center" />
+                <column label="Winchance" width="125px" sort="auto" align="center" />
+            </columns>
+            <rows />
+        </grid>
+        <panel id="pnlSummary" hflex="true" title="Summary" visible="false" />
+        <grid id="grdInfoSummary" vflex="true" hflex="true" emptyMessage="no elements" visible="false">
+            <columns visible="false">
+                <column label="Label" width="175px" sort="auto" align="center" />
+                <column label="Value" sort="auto" align="center" />
+            </columns>
+            <rows />
+        </grid>
+    </vlayout>
+</vlayout>

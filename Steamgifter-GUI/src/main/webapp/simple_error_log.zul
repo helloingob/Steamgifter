@@ -1,0 +1,12 @@
+<zk>
+    <window title="Simple Error Log" border="normal" width="800px" height="600px" apply="com.helloingob.gifter.SimpleErrorLogController" position="center, center" mode="modal" class="simple-error">
+        <vlayout hflex="true" vflex="true">
+            <hlayout hflex="true">
+                <button id="btnMessage" label="Message" />
+                <button id="btnValue" label="Value" />
+            </hlayout>
+            <label id="lblContent" pre="true" />
+        </vlayout>
+    </window>
+    <style>.simple-error .z-window-content .z-vlayout { overflow:scroll; }</style>
+</zk>
